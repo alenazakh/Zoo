@@ -1,4 +1,4 @@
-package org.example;
+package org.zoo;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -37,8 +37,8 @@ public class Main {
         listOfCreatures.add(creatureStork);
         Whale creatureWhale = new Whale();
         listOfCreatures.add(creatureWhale);
-        //Dog creatureDog = new Dog();
-        //listOfCreatures.add(creatureDog);
+        Dog creatureDog = new Dog();
+        listOfCreatures.add(creatureDog);
         Flamingos creatureFlamingo = new Flamingos();
         listOfCreatures.add(creatureFlamingo);
         Sturgeon creatureSturgeon = new Sturgeon();

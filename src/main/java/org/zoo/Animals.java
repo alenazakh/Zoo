@@ -1,4 +1,4 @@
-package org.example;
+package org.zoo;
 public abstract class Animals extends EarthCreatures {
 
     public Animals () {

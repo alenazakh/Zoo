@@ -1,6 +1,4 @@
-package org.example;
-import java.util.ArrayList;
-import java.util.SortedMap;
+package org.zoo;
 
 public abstract class  EarthCreatures {
 
