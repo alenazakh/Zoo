@@ -1,4 +1,4 @@
-package org.example;
+package org.zoo;
 
 public class Flamingos extends Birds{
 
