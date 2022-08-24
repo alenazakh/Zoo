@@ -1,4 +1,4 @@
-package org.zoo;
+package org.zoo.bird;
 
 public class Stork extends Birds {
     public Stork () {

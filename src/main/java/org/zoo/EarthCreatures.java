@@ -2,7 +2,7 @@ package org.zoo;
 
 public abstract class  EarthCreatures {
 
-    String category;
+    public String category;
 
     public EarthCreatures() {
         this.category = "Earth creature";

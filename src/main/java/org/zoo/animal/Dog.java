@@ -1,4 +1,4 @@
-package org.zoo;
+package org.zoo.animal;
 public class Dog extends Animals {
 
     public Dog () {

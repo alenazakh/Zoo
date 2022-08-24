@@ -1,4 +1,4 @@
-package org.zoo;
+package org.zoo.bird;
 
 public class Chicken extends Birds {
 

@@ -1,4 +1,6 @@
-package org.zoo;
+package org.zoo.animal;
+
+import org.zoo.fish.Fishes;
 
 public class Whale extends Animals {
 

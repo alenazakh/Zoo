@@ -1,4 +1,7 @@
-package org.zoo;
+package org.zoo.bird;
+
+import org.zoo.EarthCreatures;
+
 public class Birds extends EarthCreatures {
 
     public Birds () {

@@ -1,4 +1,4 @@
-package org.zoo;
+package org.zoo.fish;
 
 public class GoldFish extends Fishes {
 

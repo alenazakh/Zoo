@@ -1,4 +1,6 @@
-package org.zoo;
+package org.zoo.fish;
+
+import org.zoo.EarthCreatures;
 
 public class Fishes extends EarthCreatures {
 
@@ -10,7 +12,7 @@ public class Fishes extends EarthCreatures {
         System.out.print("get oxygen from the water");
     }
 
-    protected void move() {
+    public void move() {
         System.out.print("swim in the water");
     }
 

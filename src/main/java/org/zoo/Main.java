@@ -3,6 +3,10 @@ package org.zoo;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import org.zoo.animal.*;
+import org.zoo.bird.*;
+import org.zoo.fish.*;
+
 public class Main {
     public static void main(String[] args) {
         ArrayList<EarthCreatures> allCreatures = makeListOfCreatures();
