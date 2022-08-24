@@ -8,13 +8,9 @@ public abstract class  EarthCreatures {
         this.category = "Earth creature";
     }
 
-    protected void breathe() {
-        System.out.println("how I breathe");
-    };
+    protected abstract void breathe();
 
-    protected void move() {
-        System.out.println("how I move");
-    };
+    protected abstract void move();
 
     protected void printInfo () {
         System.out.println("---------------------");
