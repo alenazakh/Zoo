@@ -16,4 +16,26 @@ public class Birds extends EarthCreatures {
         System.out.print("fly in the sky");
     }
 
+    // method was added for tests
+    public String move(String message) {
+        boolean checkTest = message.equals("test");
+        if (checkTest) {
+            String moveMessage = "fly in the sky";
+            return moveMessage;
+        } else {
+            return "";
+        }
+    }
+
+    // method was added for tests
+    public String breathe(String message) {
+        boolean checkTest = message.equals("test");
+        if (checkTest) {
+            String breatheMessage = "breathe the air";
+            return breatheMessage;
+        } else {
+            return "";
+        }
+    }
+
 }

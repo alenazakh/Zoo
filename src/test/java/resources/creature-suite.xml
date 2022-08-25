@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="All creatures suite">
+    <test name="All creatures" parallel="classes">
+        <classes>
+            <class name="TestBase"/>
+            <class name="CreatureTest.AnimalTest">
+                <methods>
+                    <exclude name="someNegativeAnimalTest1"/>
+                </methods>
+            </class>
+            <class name="CreatureTest.BirdTest"/>
+            <class name="CreatureTest.FishTest"/>
+        </classes>
+    </test>
+</suite>

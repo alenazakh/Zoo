@@ -1,16 +1,26 @@
 package org.zoo;
 
 
+import java.math.BigInteger;
+
 public class OnlyForTesting {
 
-    public int multiply3 (int a) {
-        return (a * 3);
+    public static double multiply3 (double a) {
+        return (a * 3.0);
     }
 
-    public boolean passingExam(int score) {
+    public static double divideBy (double a, double b) {
+        if (b == 0) {
+            throw new ArithmeticException("Only for numbers > 0");
+        } else {
+            return a / b;
+        }
+    }
+
+    public static boolean passingExam(int score) throws Exception {
         boolean passExam = false;
         while (score < 0 || score > 100) {
-            System.out.println("Incorrect data. Try again: ");
+            throw new Exception("Score should by in the range from 0 to 100.");
         }
         if (score >= 70) {
             System.out.println("Congrats! You’ve passed the test!");
@@ -21,24 +31,18 @@ public class OnlyForTesting {
         return passExam;
     }
 
-    public int multiplicationOfAnyNFirstNumbers (int a, int n) {
-        int result = 1;
-        int x = a;
-        for (int i = 1; i <= n; i++) {
-            x += i - 1;
-            result *= x;
-        }
-        System.out.printf("multiplication for numbers from %d to %d : %d\n", a, n-1, result);
-        return result;
-    }
 
-    public int factorial (int number) {
-        int result = 1;
-        for (int i = 1; i <= number; i++) {
-            result *= i;
-        }
-        System.out.printf("Factorial of %d = %d.\n", number, result);
-        return result;
+    public static BigInteger factorial (int number) throws Exception {
+        if (number <= 0) {
+            throw new Exception("Only for numbers > 0");
+        } else {
+            BigInteger result = new BigInteger("1");
+            for (int i = 1; i <= number; i++) {
+                String iToString = String.valueOf(i);
+                BigInteger tempI = new BigInteger(iToString);
+                result = result.multiply(tempI);  //result *= i;
+            }
+            return result; }
     }
 
 }

@@ -1,8 +1,6 @@
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
-import java.sql.SQLOutput;
-
 public class TestBase {
 
     @BeforeTest

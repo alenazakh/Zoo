@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Negative suite">
+    <test name="All negative tests" parallel="true" thread-count="5">
+        <classes>
+            <class name="OnlyForTesting.MathTest"/>
+        </classes>
+        <groups>
+            <run>
+                <include name="negative"/>
+            </run>
+        </groups>
+    </test>
+</suite>

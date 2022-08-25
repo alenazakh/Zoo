@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Positive suite">
+    <test name="All positive tests" parallel="true" thread-count="10">
+        <classes>
+            <class name="OnlyForTesting.MathTest"/>
+        </classes>
+        <groups>
+            <run>
+                <include name="positive"/>
+            </run>
+        </groups>
+    </test>
+</suite>

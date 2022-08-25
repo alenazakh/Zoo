@@ -16,4 +16,26 @@ public class Fishes extends EarthCreatures {
         System.out.print("swim in the water");
     }
 
+    public String move(String message) {
+        boolean checkTest = message.equals("test");
+        if (checkTest) {
+            String moveMessage = "swim in the water";
+            return moveMessage;
+        } else {
+            return "";
+        }
+    }
+
+    // method was added for tests
+    public String breathe(String message) {
+        boolean checkTest = message.equals("test");
+        if (checkTest) {
+            String breatheMessage = "get oxygen from the water";
+            return breatheMessage;
+        } else {
+            return "";
+        }
+    }
+
+
 }
